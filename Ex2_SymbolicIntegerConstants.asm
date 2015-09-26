@@ -11,10 +11,17 @@ that uses the symbols as initializers.
 .stack 4096
 ExitProcess proto,dwExitCode:dword
 
-??? = 0
+MONDAY = 0
+TUESDAY = 1
+WEDNESDAY = 2
+THURSDAY = 3
+FRIDAY = 4
+SATURDAY = 5
+SUNDAY = 6
 
 .data
-myDays BYTE ???
+
+myDays BYTE MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 
 .code
 main PROC
